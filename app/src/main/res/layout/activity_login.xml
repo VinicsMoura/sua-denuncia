@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.suadenuncia.LoginActivity"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_weight="0.19"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/logo_sd" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="E-mail" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Senha"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/bt_entrar"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Entrar"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_corner_bt"/>
+
+        <TextView
+            android:id="@+id/tv_ainda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ainda não tem cadastro?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+            android:textColor="#4C8DDC"
+            android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/bt_cadastre_se"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="CADASTRE-SE JÁ"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_corner_bt"/>
+
+</LinearLayout>
+</ScrollView>

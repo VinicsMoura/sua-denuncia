@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.suadenuncia">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.suadenuncia.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_placa"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_placa"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        >
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".LoginActivity"
+            android:label="Sua Denúncia"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MapsActivity"/>
+        <activity
+            android:name=".CadastroActivity"
+            android:label="Cadastre-se já"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".CadastroGSActivity"
+            android:label="Cadastre-se já"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".DenunciaActivity"
+            android:label="Cadastro de denúncia"
+            android:windowSoftInputMode="stateHidden"> </activity>
+    </application>
+
+</manifest>

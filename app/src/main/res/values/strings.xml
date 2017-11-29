@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Sua Denúncia</string>
+    <string name="title_activity_maps">Sua Denúncia</string>
+    <string name="drawer_open">Abrir navegação</string>
+    <string name="drawer_close">Fechar navegação</string>
+
+    <string name="navigation_drawer_open">Abre navigation drawer</string>
+    <string name="navigation_drawer_close">Fecha navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="menu_array">
+        <item>Início</item>
+        <item>Perfil</item>
+        <item>Denúncias</item>
+        <item>Contate-nos</item>
+    </string-array>
+
+</resources>

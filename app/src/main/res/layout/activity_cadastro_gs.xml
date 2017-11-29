@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.suadenuncia.CadastroGSActivity"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_weight="0.19"
+            android:layout_margin="15dp"
+            app:srcCompat="@drawable/logo_sd" />
+
+    <EditText
+        android:id="@+id/et_nome"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Nome" />
+
+    <EditText
+        android:id="@+id/et_cpf"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="CPF"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/bt_cadastrar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Cadastrar" />
+
+</LinearLayout>
+</ScrollView>
